@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" id="test">
+	<head>
+		<title>Codelitically Correct</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="HTML, CSS" />
+		<link rel="stylesheet" href="./css/styles.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;1,100&family=Open+Sans:wght@300;400&display=swap"
+			rel="stylesheet"
+		/>
+		<nav id="mynav" class="navclosed">
+			<ul class="nav">
+				<li class="nav-element">
+					<a href="index.html">Home</a>
+				</li>
+				<li class="nav-element">
+					<a href="guide.html">Guide</a>
+				</li>
+				<li class="nav-element">
+					<a href="examples.html">Examples</a>
+				</li>
+				<li class="nav-element">
+					<a href="cool_sites.html">Cool Sites</a>
+				</li>
+				<!-- added hamburger button using font-awesome -->
+				<li>
+					<a href="javascript:void(0);" class="icon" onclick="toggleMobile()">
+						<i class="fa fa-bars"></i>
+					</a>
+				</li>
+			</ul>
+		</nav>
+
+		<h1 id="page-title">Codelitically Correct</h1>
+	</head>
+
+	<body id="main-page">
+		<header class="mission">Making Code Cleaner, Quicker, Better</header>
+
+		<div class="main-page__row">
+			<h5>
+				Our main goal at Codelitically Correct is to serve as a reference guide, teacher, and quick
+				cheat sheet for anyone who wants to expand their knowledge and better their coding skills!
+				Check out our tips on the "Guide" page, see real lines of code on our "Examples" page, and
+				click on the logos of any of the websites on our "Cool Sites" page to visit websites to help
+				you code HTML and CSS!
+			</h5>
+			<img
+				id="screen"
+				src="images/code-index.jpeg"
+				alt="HTML on PC screen"
+				width="300"
+				height="500"
+			/>
+		</div>
+
+		<div class="main-page__row">
+			<img
+				id="jarred"
+				src="images/jarred.jpg"
+				alt="Jarred testimonial profile"
+				width="125"
+				height="125"
+			/>
+
+			<p><span>Jarred Beverly</span> IT Manager, AES</p>
+			<p>
+				Codelitically Correct helped me write the cleanest code of my life thanks to the amazing
+				tips. Wonderful guide! I use it everyday!
+			</p>
+		</div>
+	</body>
+
+	<script>
+		//https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav
+		function toggleMobile() {
+			var x = document.getElementById('mynav');
+			if (x.className === 'navclosed') {
+				x.className += ' navopen';
+			} else {
+				x.className = 'navclosed';
+			}
+		}
+	</script>
+
+	<footer>
+		<p>&copy; Copyright 2021. All Rights Reserved.</p>
+		<p><a href="mailto:smiths43@student.surry.edu">Send us an email!</a></p>
+	</footer>
+</html>
